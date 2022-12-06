@@ -44,7 +44,7 @@ MARKDOWN = {
     'output_format': 'html5',
 }
 
-TIMEZONE = 'Asia/Tokyo'
+TIMEZONE = 'Europe/Amsterdam'
 
 DEFAULT_LANG = 'en'
 
