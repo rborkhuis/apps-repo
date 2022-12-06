@@ -23,12 +23,11 @@ WEBASSETS_CONFIG = [
 
 PATH = 'content'
 
-STATIC_PATHS = ['extra/CNAME', 'extra/favicon.ico']
+STATIC_PATHS = ['extra/favicon.ico']
 ARTICLE_EXCLUDES = []
 PAGE_PATHS = ['pages', 'apps', '../packages']
 
 EXTRA_PATH_METADATA = {
-    'extra/CNAME': {'path': 'CNAME'},
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 
@@ -58,8 +57,8 @@ CACHE_CONTENT = False
 LOAD_CONTENT_CACHE = False
 
 MENUITEMS = (
-    ('Applications', '/apps'),
-    ('Submit', '/submit'),
+    ('Applications', 'apps'),
+    ('Submit', 'submit'),
 )
 
 LINKS = (
