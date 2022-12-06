@@ -9,7 +9,7 @@ import pelican.themes.webosbrew
 
 AUTHOR = 'webOS Homebrew Project'
 SITENAME = 'webOS Homebrew Project'
-SITEURL = ''
+SITEURL = 'https://rborkhuis.github.io/apps-repo/'
 
 THEME = 'webosbrew'
 THEME_STATIC_PATHS = [join(dirname(abspath(__file__)), 'theme/static'), pelican.themes.webosbrew.static_dir()]
