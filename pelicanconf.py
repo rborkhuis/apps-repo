@@ -9,7 +9,8 @@ import pelican.themes.webosbrew
 
 AUTHOR = 'webOS Homebrew Project'
 SITENAME = 'webOS Homebrew Project'
-SITEURL = 'https://rborkhuis.github.io/apps-repo/'
+SITEURL = 'https://rborkhuis.github.io/'
+RELATIVE_URLS = "apps-repo"
 
 THEME = 'webosbrew'
 THEME_STATIC_PATHS = [join(dirname(abspath(__file__)), 'theme/static'), pelican.themes.webosbrew.static_dir()]
@@ -57,8 +58,8 @@ CACHE_CONTENT = False
 LOAD_CONTENT_CACHE = False
 
 MENUITEMS = (
-    ('Applications', 'apps'),
-    ('Submit', 'submit'),
+    ('Applications', '/apps-repo/apps'),
+    ('Submit', '/apps-repo/submit'),
 )
 
 LINKS = (
