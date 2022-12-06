@@ -29,9 +29,10 @@ class AppListingGenerator:
         maxp = pagination['max']
         prevp = pagination['prev']
         nextp = pagination['next']
+        urlprefix = '/apps-repo/'
 
         def _nav_path(p: int):
-            return 'apps' if p == 1 else 'apps/page/%d' % p
+            return urlprefix+'apps' if p == 1 else urlprefix+'apps/page/%d' % p
 
         prev_href = _nav_path(prevp) if prevp else None
         next_href = _nav_path(nextp) if nextp else None
@@ -57,7 +58,7 @@ class AppListingGenerator:
             page_links = page_links + [None, _nav_item(maxp)]
 
         def _page_path(p: int):
-            return 'apps/index.html' if p == 1 else 'apps/page/%d.html' % p
+            return urlprefix+'apps/index.html' if p == 1 else urlprefix+'apps/page/%d.html' % p
 
         with open(join(outdir, ('apps-page-%d.html' % page)), 'w', encoding='utf-8') as f:
             f.write(pystache.render(self.index_template, {

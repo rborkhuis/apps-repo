@@ -66,7 +66,7 @@ def add_app_indices(generator: PagesGenerator):
 
 
 def apps_list_href(page):
-    return '../' if page <= 1 else f'/page/{page}'
+    return '../' if page <= 1 else f'/apps-repo/page/{page}'
 
 
 def add_app_api_data(generator: StaticGenerator):
