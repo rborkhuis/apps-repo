@@ -9,8 +9,8 @@ import pelican.themes.webosbrew
 
 AUTHOR = 'webOS Homebrew Project'
 SITENAME = 'webOS Homebrew Project'
-SITEURL = 'https://rborkhuis.github.io/'
-RELATIVE_URLS = "apps-repo"
+SITEURL = 'https://rborkhuis.github.io/apps-repo/'
+FEED_DOMAIN = SITEURL
 
 THEME = 'webosbrew'
 THEME_STATIC_PATHS = [join(dirname(abspath(__file__)), 'theme/static'), pelican.themes.webosbrew.static_dir()]
@@ -72,6 +72,6 @@ LINKS = (
 DEFAULT_PAGINATION = 20
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 COPYRIGHT_YEAR = datetime.date.today().year
